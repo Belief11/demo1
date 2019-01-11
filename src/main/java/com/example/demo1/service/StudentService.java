@@ -22,7 +22,7 @@ public interface StudentService {
 
     public List<Student> getStudentList();
 
-    public void  deleteStudent(Integer stuID);
+    public void  deleteStudent(Integer stuID); //通过学生ID删除学生
 
 
 }
