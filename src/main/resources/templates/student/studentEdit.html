@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>student</title>
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="container">
+<br/>
+<h1>修改用户</h1>
+<br/><br/>
+<form th:action="@{/web/toupdate}">
+<div class="with:80%">
+
+    <div >
+        学生ID &nbsp;&nbsp;&nbsp;：<input  type="text" th:value="*{student.stuID}" name="stuID">
+    </div>
+   <div>
+       学生姓名：<input  th:value="*{student.stuName}" name="stuName">
+       </div>
+
+<div>
+    学生电话：<input  th:value="*{student.stuPhone}" name="stuPhone">
+</div>
+<div>
+    学生地址：<input  th:value="${student.stuAddress}" name="stuAddress">
+</div>
+
+
+    <div>
+        <input type="submit"  value="Submit">
+    </div>
+
+</div>
+</form>
+
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>student</title>
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="container">
+<br/>
+<h1>添加用户</h1>
+<br/><br/>
+<form th:action="@{/web/toadd}">
+    <div class="with:80%">
+
+        <div >
+            学生ID &nbsp;&nbsp;&nbsp;：<input  type="text"   name="stuID">
+        </div>
+        <div>
+            学生姓名：<input  type="text" name="stuName">
+        </div>
+
+        <div>
+            学生电话：<input  type="text"  name="stuPhone">
+        </div>
+        <div>
+            学生地址：<input  type="text"  name="stuAddress">
+        </div>
+
+
+        <div>
+            <input type="submit"  value="Submit">
+            &nbsp; &nbsp; &nbsp;
+            <input type="reset" value="Reset"  />
+        </div>
+
+    </div>
+</form>
+
+</body>
+</html>
